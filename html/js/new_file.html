@@ -1,0 +1,18 @@
+<span id="text" style="color:#fff"></span>
+<script type="text/javascript">
+						setInterval(on,1000);  //这里是使时间动起来的地方
+						function on() {
+							var date1 =new Date;
+							var  year=date1.getFullYear();
+							var  month=date1.getMonth();
+							var day=date1.getDate();
+							var xinqi=date1.getDay();
+							var hh=date1.getHours();
+							var mm=date1.getMinutes();
+							var ss=date1.getSeconds();
+				            var dayNames = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+                            var Stamp = new Date();
+                            var time=year+"年"+(month+1)+"月"+day+"日"+dayNames[Stamp.getDay()] +"  "+hh+":"+mm+":"+ss;
+		              	document.getElementById("text").innerHTML = time;
+						}
+                    </script>
